@@ -6,13 +6,11 @@ import axios from 'axios'
 import { BASE_URL } from '../globals'
 
 const Main = () => {
-    // const starShips = []
     const [starShips, setShips] = useState([])
   useEffect(() => {
     const getShips = async () => {
       const response = await axios.get(`${BASE_URL}/starships`)
       setShips(response.data.results)
-      // console.log(response.data.results)
     }
     getShips()
   }, [])

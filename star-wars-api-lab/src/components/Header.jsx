@@ -1,7 +1,12 @@
 import Nav from './Nav'
 
 const Header = () => {
-    return <h2> I am header </h2>
+    return (
+        <div className='header'>
+            <h2> I am header </h2>
+            <Nav />
+        </div>
+    )
 }
 
 export default Header

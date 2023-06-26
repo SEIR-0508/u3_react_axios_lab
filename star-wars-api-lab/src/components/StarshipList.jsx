@@ -1,10 +1,12 @@
-const StarshipList = ({starShips}) => {
-    // console.log(props)
+import Nav from './Nav'
+
+const StarshipList = ({ starShips }) => {
     if (!starShips) {
         return <div> Loading. These are not the ships you're looking for. </div>
     } else {
         return (
-                <div className='ships-list'>
+            <div className='ships-list'>
+                    <Nav />
                     {starShips.map((starShip, index) => (
                         <div key={index}
                         className="card">
