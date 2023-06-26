@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('https://insidethemagic.net/wp-content/uploads/2022/01/Screenshot-2022-01-10-at-15.24.18-800x400.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(125, 125, 125);
+    background-blend-mode: multiply;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page-instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+
+.page-title {
+    font-size: 5rem;
+}
+
+.page-title,
+.page-subtitle {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.footer-bar,
+.nav-bar {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-items-container,
+.nav-items-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-item-button,
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5em 1.5em;
+    border: yellow dotted 2px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.footer-item-button:hover,
+.nav-item:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.footer-item {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5em 1.5em;
+}
+
+.grid-container {
+    margin: 7rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    border: white solid 2px;
+    padding: 2rem;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.card-title, .card-data {
+    color: white;
+}
+
+.card-title {
+    margin-bottom: 1em;
+}
+
+.card-data-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.card-data1, .card-data2 {
+    margin: 1em 0;
+    border: white 1px solid;
+    padding: 10px;
+}
+
+.card-data1 {
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(83, 83, 251);    
+}
+
+.card-data2 {
+    text-align: center;
+    background-color: rgb(122, 122, 1);
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
