@@ -1,0 +1,54 @@
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.App-main {
+  align-content: center;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: red;
+  font-size: 1.5rem;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 1000px;
+  width: 100%;
+  object-fit: cover;  
+}
+
+.card {
+  border: 1px solid pink;
+}
+
+.main {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+}
+
+.card {
+  text-align: center;
+}
