@@ -1,0 +1,5 @@
+export const SHIPS_URL = 'https://swapi.dev/api/starships'
+export const FILMS_URL = 'https://swapi.dev/api/films'
+export const PLANETS_URL = 'https://swapi.dev/api/planets'
+export const CHARACTERS_URL = 'https://swapi.dev/api/people'
+export const SPECIES_URL = 'https://swapi.dev/api/species'

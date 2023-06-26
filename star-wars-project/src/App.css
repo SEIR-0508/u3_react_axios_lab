@@ -1,0 +1,71 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body{
+  margin: 10px 60px;
+}
+
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav{
+  display: flex;
+}
+
+.nav-link{
+  margin: 0 20px;
+}
+
+.species-link{
+  margin-right:0;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:100px;
+}
+
+h1{
+  margin: 0 30px 0 0;
+  font-size: 3rem;
+  text-align: left;
+}
+
+img{
+  height:400px;
+  border-radius: 5%;
+}
+
+.starships{
+  text-align: left;
+  margin-top:100px;
+}
+
+.films{
+  text-align: left;
+  margin-top:100px;
+}
+
+.planets{
+  text-align: left;
+  margin-top:100px;
+}
+
+.characters{
+  text-align: left;
+  margin-top:100px;
+}
+
+.species{
+  text-align: left;
+  margin-top:100px;
+}
