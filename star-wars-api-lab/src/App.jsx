@@ -23,7 +23,7 @@ function App() {
     <div className='main'>
       <Main />
       <Header />
-      <StarshipList />
+      {/* <StarshipList starShips={starShips} /> */}
     </div>
   )
 }

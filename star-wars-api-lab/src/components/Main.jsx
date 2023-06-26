@@ -6,8 +6,8 @@ const Main = () => {
     return (
         <div className='routes-container'>
             <Routes>
-                <Route path="/SharshipList" element={<StarshipList />} />
                 <Route path="/" element={<Home />} />
+                <Route path="/SharshipList" element={<StarshipList />} />
             </Routes>
         </div>
     )
