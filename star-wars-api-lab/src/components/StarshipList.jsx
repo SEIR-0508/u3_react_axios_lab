@@ -1,4 +1,3 @@
-import Nav from './Nav'
 // import StarshipPage from './StarshipPage'
 
 const StarshipList = ({ starShips }) => {
@@ -8,13 +7,13 @@ const StarshipList = ({ starShips }) => {
     } else {
         return (
             <div className='ships-list'>
-                    {/* <Nav /> */}
                     {starShips.map((starShip, index) => (
                         <div key={index}
-                        className="card">
+                        className="ship-card">
                             <h4> Name: {starShip.name} </h4>
                             <p> Manufacturer: {starShip.manufacturer} </p>
                             <p> Credits: {starShip.cost_in_credits} </p>
+                            <button type="button"> Details </button>
                         </div>
                     ))}
                 </div>

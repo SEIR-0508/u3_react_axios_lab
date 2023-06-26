@@ -8,7 +8,7 @@ import axios from 'axios'
 import { BASE_URL } from '../globals'
 
 const Main = () => {
-    // GET STARSHIPS INFO
+// GET STARSHIPS INFO
     const [starShips, setShips] = useState([])
     // const [specificShip, setShip] = useState(null)
   useEffect(() => {
@@ -18,7 +18,7 @@ const Main = () => {
     }
     getShips()
   }, [])
-    // GET FILMS INFO
+// GET FILMS INFO
     const [films, setFilms] = useState([])
     useEffect(() => {
         const getFilms = async () => {
