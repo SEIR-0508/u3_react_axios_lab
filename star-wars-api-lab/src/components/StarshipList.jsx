@@ -1,19 +1,21 @@
-const StarshipList = (props) => {
-    console.log(props)
-    if (!props.starShips) {
+const StarshipList = ({starShips}) => {
+    // console.log(props)
+    if (!starShips) {
         return <div> Loading. These are not the ships you're looking for. </div>
     } else {
         return (
-            <div className="grid">
-                <h2> I am Starships List </h2>
-                <ul className="ships-list">
-            {props.starShips.map((starShip, index) => (
-                <li key="index"> {starShip.name} </li>
-                ))}
-                </ul>
-        </div>
-    )
-}
+                <div className='ships-list'>
+                    {starShips.map((starShip, index) => (
+                        <div key={index}
+                        className="card">
+                            <h4> Name: {starShip.name} </h4>
+                            <p> Manufacturer: {starShip.manufacturer} </p>
+                            <p> Credits: {starShip.cost_in_credits} </p>
+                        </div>
+                    ))}
+                </div>
+        )
+    }
 }
 
 export default StarshipList

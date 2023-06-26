@@ -1,13 +1,26 @@
 import { Route, Routes } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import StarshipList from './StarshipList'
 import Home from './Home'
+import axios from 'axios'
+import { BASE_URL } from '../globals'
 
 const Main = () => {
+    // const starShips = []
+    const [starShips, setShips] = useState([])
+  useEffect(() => {
+    const getShips = async () => {
+      const response = await axios.get(`${BASE_URL}/starships`)
+      setShips(response.data.results)
+      // console.log(response.data.results)
+    }
+    getShips()
+  }, [])
     return (
         <div className='routes-container'>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/SharshipList" element={<StarshipList />} />
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/starships" element={<StarshipList starShips={starShips} />} />
             </Routes>
         </div>
     )
