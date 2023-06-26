@@ -3,7 +3,7 @@ import Nav from './Nav'
 const Header = () => {
     return (
         <div className='header'>
-            <h2> I am header </h2>
+            <h1> Well hello there </h1>
             <Nav />
         </div>
     )

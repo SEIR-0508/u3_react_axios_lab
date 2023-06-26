@@ -8,7 +8,7 @@ const StarshipList = ({ starShips }) => {
     } else {
         return (
             <div className='ships-list'>
-                    <Nav />
+                    {/* <Nav /> */}
                     {starShips.map((starShip, index) => (
                         <div key={index}
                         className="card">
