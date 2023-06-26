@@ -1,6 +1,8 @@
 import Nav from './Nav'
+// import StarshipPage from './StarshipPage'
 
 const StarshipList = ({ starShips }) => {
+    // console.log(starShips)
     if (!starShips) {
         return <div> Loading. These are not the ships you're looking for. </div>
     } else {
