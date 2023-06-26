@@ -6,6 +6,7 @@ import Starships from './Components/Starships'
 import Films from './Components/Films'
 import Planets from './Components/Planets'
 import Characters from './Components/Characters'
+import ShipDetails from './Components/StarshipItem'
 import axios from 'axios'
 import { BASE_URL } from './globals'
 import { useState, useEffect } from 'react'
@@ -49,6 +50,7 @@ function App() {
         <Route exact path="/films" element = {<Films films={films}/>}/>
         <Route exact path="/planets" element = {<Planets planets={planets}/>}/>
         <Route exact path="/characters" element = {<Characters characters={characters}/>}/>
+        <Route exact path="/starshipdetails" element = {<ShipDetails />}/>
       </Routes>
     </div>
   )

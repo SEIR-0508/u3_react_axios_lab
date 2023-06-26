@@ -1,19 +1,27 @@
 import Nav from './Nav'
 import Footer from './Footer'
+import StarshipItem from './StarshipItem'
+import { BASE_URL } from '../globals'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Starships = (props) => {
+    
+    let navigate = useNavigate()
 
-    console.log(props)
+    const showShip = (key) => {
+        navigate(`${key}`)
+    }
 
     return (
         <div className="starships-page">
             <Nav />
             <div className="grid-container">
                 {
-                    props.starships.map((starship, index) => (
-                        <div key={index} className='card'>
-                            {console.log(index)}
+                    props.starships.map((starship, key) => (
+                        <div key={key} className='card' onClick={() => showShip(key)}>
                             <h2 className="card-title">{starship.name}</h2>
                             <hr></hr>
                             <div className="card-data-container">
