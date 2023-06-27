@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { films_url } from "../global"
+import { useNavigate } from "react-router-dom"
 import axios from "axios"
 
 const Films = () => {
@@ -14,21 +15,27 @@ const Films = () => {
     }, [])
     console.log(films)
 
+    const navigate = useNavigate()
+
+    const showFilms = (key) => {
+        navigate(`${key}`)
+    }
+
     return films.length != 0 ? (
-        <div className="grid">
-            {
-                films.map(film => (
-                    <ul key={film.episode_id} className="card">
-                        <h3>{film.title}</h3>
-                        <li>Director: {film.director}</li>
-                        <li>Producer: {film.producer}</li>
-                        <li>Release Date: {film.release_date}</li>
-                        {/* <p>{film.opening_crawl}</p> */}
-                    </ul>
-                ))
-            }
+        <div>
+            <h2>Films List</h2>
+            <div className="grid">
+                {
+                    films.map((film, key) => (
+                        <div key={key+1} onClick={() => {showFilms(key+1)}} className="card">
+                            <h3>{film.title}</h3>
+                        </div>
+                    ))
+                }
+            </div>
         </div>
-    ) : <h3>Finding Films...</h3>
+
+    ) : <h2>Finding Films...</h2>
 }
 
 export default Films

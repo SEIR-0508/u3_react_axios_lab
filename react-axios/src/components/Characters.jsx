@@ -20,19 +20,23 @@ const Characters = () => {
 
     console.log(characters)
     return characters.length != 0 ? (
-        <div className="grid">
+        <div>
+            <h2>Characters List</h2>
+            <div className="grid">
             {characters.map(character => (
-                <ul key={character.name} className='card'>
+                <div key={character.name} className='card'>
                     <h3>{character.name}</h3>
-                    <li>Height: {character.height}</li>
+                    {/* <li>Height: {character.height}</li>
                     <li>Mass: {character.mass}</li>
                     <li>Gender: {character.gender}</li>
                     <li>Hair Color: {character.hair_color}</li>
-                    <li>Eye Color: {character.eye_color}</li>
-                </ul>
+                    <li>Eye Color: {character.eye_color}</li> */}
+                </div>
             ))}
         </div>
-    ) : <h3>Finding Characters...</h3>
+        </div>
+        
+    ) : <h2>Finding Characters...</h2>
 }
 
 export default Characters

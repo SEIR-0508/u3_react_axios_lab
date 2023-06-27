@@ -29,18 +29,16 @@ const StarshipList = (props) => {
     console.log(starships)
 
     return starships.length != 0 ? (
-        <div className="grid">
-            {starships.map((starship, key) => (
-                <div key={key + 2} onClick={() => showShip(key + 2)} className='card'>
-                    <h3>{starship.name}</h3>
-                    {/* <li>manufacturer: {starship.manufacturer}</li>
-                    <li>model: {starship.model}</li>
-                    <li>length: {starship.length}</li> */}
-                </div>
-            ))}
-            
+        <div className="starships">
+            <h2>Starships List</h2>
+            <div className="grid">
+                {starships.map((starship, key) => (
+                    <div key={key + 2} onClick={() => showShip(key + 2)} className='card'>
+                        <h3>{starship.name}</h3>
+                    </div>
+                ))}
+            </div>
         </div>
-    ) : <h3>Finding starships...</h3>
+    ) : <h2>Finding starships...</h2>
 }
-
 export default StarshipList
