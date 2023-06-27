@@ -33,10 +33,6 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
   color: #888;
 }
@@ -44,10 +40,11 @@
 .nav {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 
 ul {
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 li {
@@ -55,13 +52,18 @@ li {
   text-align: left;
 }
 
-.starships {
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
+  gap: 10px;
 }
 
-.starship {
+.card {
   border: 1px solid gray;
   border-radius: 20px;
+  padding: 20px;
+}
+
+h3 {
+  margin: 0;
 }

@@ -1,38 +1,45 @@
 import { useState, useEffect } from 'react'
 import { starships_url } from '../global'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const StarshipList = (props) => {
     const [starships, setStarships] = useState([])
 
     useEffect(() => {
-        let starshipsTotal = []
-        const getStarships = async (URL) => {
+        const getStarships = async (URL, total) => {
             const res = await axios.get(URL)
-            console.log(res.data.results)
-            starshipsTotal = starshipsTotal.concat(res.data.results)
+            total = total.concat(res.data.results)
+            setStarships(total)
+            console.log(total, 'render once', res.data.next)
             if (res.data.next) {
-                getStarships(res.data.next)
+                console.log(res.data.next)
+                getStarships(res.data.next, total)
             }
-            console.log(starshipsTotal)
-            setStarships(starshipsTotal)
-            // setStarships(res.data.results)
         }
-        getStarships(starships_url)
+        getStarships(starships_url, [])
     }, [])
-    
-    return (
-        <div className="starships">
-            {starships.map(starship => (
-                <ul key={starship.model} className='starship'>
+
+    let navigate = useNavigate()
+
+    const showShip = (key) => {
+        navigate(`${key}`)
+    }
+
+    console.log(starships)
+
+    return starships.length != 0 ? (
+        <div className="grid">
+            {starships.map((starship, key) => (
+                <div key={key + 2} onClick={() => showShip(key + 2)} className='card'>
                     <h3>{starship.name}</h3>
                     <li>manufacturer: {starship.manufacturer}</li>
                     <li>model: {starship.model}</li>
                     <li>length: {starship.length}</li>
-                </ul>
+                </div>
             ))}
         </div>
-    )
+    ) : <h3>Finding starships...</h3>
 }
 
 export default StarshipList
