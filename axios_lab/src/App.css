@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links ul li a {
+  color: black;
+  background-color: lightgray;
+  padding: 5px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.card {
+  width: 400px;
+  border: 2px solid white;
+  margin-top: 150px;
+  cursor: pointer;
+}
+.cardMain{
+ display: flex;
+ flex-direction: row;
+}
+
+.App {
+  color: white;
+}
