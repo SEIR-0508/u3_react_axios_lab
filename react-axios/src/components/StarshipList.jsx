@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { starships_url } from '../global'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link, Route } from 'react-router-dom'
 
 const StarshipList = (props) => {
     const [starships, setStarships] = useState([])
@@ -33,11 +33,12 @@ const StarshipList = (props) => {
             {starships.map((starship, key) => (
                 <div key={key + 2} onClick={() => showShip(key + 2)} className='card'>
                     <h3>{starship.name}</h3>
-                    <li>manufacturer: {starship.manufacturer}</li>
+                    {/* <li>manufacturer: {starship.manufacturer}</li>
                     <li>model: {starship.model}</li>
-                    <li>length: {starship.length}</li>
+                    <li>length: {starship.length}</li> */}
                 </div>
             ))}
+            
         </div>
     ) : <h3>Finding starships...</h3>
 }

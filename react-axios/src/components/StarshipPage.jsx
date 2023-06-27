@@ -13,7 +13,8 @@ let {id} = useParams()
 useEffect(()=>{
   const getStarship = async() => {
     const response = await axios.get(`https://swapi.dev/api/starships/${id}`)
-    setStarship(response.data.results)
+    console.log(response)
+    setStarship(response.data)
   }
   getStarship()
 },[])
@@ -24,7 +25,7 @@ return starship ? (
   <div className="detail">
     <h2>Name: {starship.name}</h2>
     ... Lets put more Data here! ... 
-    <Link to="/StarshipsList"> Return to starship list</Link>
+    <Link to="/starships"> Return to starship list</Link>
   </div>
 ) : <h3>Finding starships...</h3>
 }
