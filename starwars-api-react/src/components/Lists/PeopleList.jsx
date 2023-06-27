@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { BASE_URL } from '../globals'
+import { BASE_URL } from '../../globals'
+import { useNavigate } from "react-router-dom"
 
 const PeopleList = () => {
 
-    const [people, setPeople] = useState([])
+    const [people, setPeople] = useState()
 
     useEffect(()=>{
         const getPeople = async() => {
@@ -15,19 +16,24 @@ const PeopleList = () => {
         getPeople()
       },[])
 
-      
-      return(
+      let navigate = useNavigate()
+
+      const showPerson = (key) => {
+        navigate(`${key}`)
+      }
+
+      return people ?(
         <div className="person">
-          <h2>List of People</h2>
+          <h2>List of Characters</h2>
           {
-            people.map((person) => (
-              <div key={person.name} className="person-name">
+            people.map((person, key) => (
+              <div key={key} onClick={()=>showPerson(key)} className="person-name">
                 <h3>{person.name}</h3>
               </div>
             ))
           }
         </div>
-      )
+      ) : <h3> Finding all people... </h3>
       }
 
 export default PeopleList

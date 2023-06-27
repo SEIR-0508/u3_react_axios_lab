@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { BASE_URL } from '../globals'
+import { BASE_URL } from '../../globals'
+import { useNavigate } from "react-router-dom"
 
 const StarshipList = () => {
 
-    const [starships, setStarships] = useState([])
+    const [starships, setStarships] = useState()
 
     useEffect(()=>{
         const getStarships = async() => {
@@ -15,19 +16,24 @@ const StarshipList = () => {
         getStarships()
       },[])
 
+      let navigate = useNavigate()
+
+      const showShip = (key) => {
+        navigate(`${key}`)
+      }
       
-      return(
+      return starships ? (
         <div className="starship">
           <h2>List of Starships</h2>
           {
-            starships.map((starship) => (
-              <div key={starship.name} className="starship-name">
+            starships.map((starship, key) => (
+              <div key={key} onClick={()=>showShip(key)} className="starship-name">
                 <h3>{starship.name}</h3>
               </div>
             ))
           }
         </div>
-      )
+      ) : <h3> Finding all starships...</h3>
       }
 
 export default StarshipList
