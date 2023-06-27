@@ -1,14 +1,15 @@
+import { useNavigate } from "react-router-dom";
 export default function Films (props) {
+let navigate= useNavigate()   
+const showFilm = (film) => {
+    navigate(`/films/${film.title}`)
+  }    
     return(
         <div className='grid'>
             {props.films .map((film)=> (
-                <div key={film.id} className="card">
+                <div key={film.id} onClick={() => showFilm(film)}className="card">
                     <h3>{film.title}</h3>
                     <p>Episode: {film.episode_id}</p>
-                    <p>Opening Crawl: {film.opening_crawl}</p>
-                    <p>Director: {film.director}</p>
-                    <p>Producer: {film.producer}</p>
-                    <p>Release Date: {film.release_date}</p>
                 </div>
             ))}
         </div>

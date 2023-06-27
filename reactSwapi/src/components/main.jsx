@@ -3,8 +3,11 @@ import Home from './home'
 import Starships from './starshiplist'
 import StarshipDetails from './starshipdetails'
 import Planets from './planets'
+import PlanetDetails from './planetdetails'
 import Characters from './characters'
 import Films from './films'
+import FilmDetails from './filmdetails'
+import CharacterDetails from './characterdetails'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
@@ -63,8 +66,11 @@ const [starships, setStarships] = useState([])
                <Route path='/starships' element={<Starships starships={starships}/>} />
                <Route path='/starships/:name' element={<StarshipDetails starships={starships}/>} />
                <Route path='/planets' element={<Planets planets={planets}/>} />
+               <Route path='/planets/:name' element={<PlanetDetails planets={planets}/>} />
                <Route path='/characters' element={<Characters peoples={peoples}/>} />
+               <Route path='/characters/:name' element={<CharacterDetails peoples={peoples}/>} />
                <Route path='/films' element={<Films films={films}/>} />
+               <Route path='/films/:title' element={<FilmDetails films={films}/>} />
             </Routes>
         </div>
     )
