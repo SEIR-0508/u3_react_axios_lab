@@ -1,16 +1,23 @@
 import Nav from './Nav'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Films = (props) => {
+
+    let navigate = useNavigate()
+
+    const showFilm = (key) => {
+        navigate(`${key}`)
+    }
 
     return (
         <div className="starships-page">
             <Nav />
             <div className="grid-container">
                 {
-                    props.films.map((film) => (
-                        <div key={film.title} className='card'>
+                    props.films.map((film, key) => (
+                        <div key={key} className='card' onClick={() => showFilm(key)}>
                             <h2 className="card-title">{film.title}</h2>
                             <hr></hr>
                             <div className="card-data-container">

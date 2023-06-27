@@ -1,16 +1,23 @@
 import Nav from './Nav'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Characters = (props) => {
+
+    let navigate = useNavigate()
+
+    const showCharacter = (key) => {
+        navigate(`${key}`)
+    }
 
     return (
         <div className="starships-page">
             <Nav />
             <div className="grid-container">
                 {
-                    props.characters.map((character) => (
-                        <div key={character.name} className='card'>
+                    props.characters.map((character, key) => (
+                        <div key={key} className='card' onClick={() => showCharacter(key)}>
                             <h2 className="card-title">{character.name}</h2>
                             <hr></hr>
                             <div className="card-data-container">

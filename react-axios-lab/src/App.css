@@ -225,6 +225,20 @@ hr {
     box-shadow: 8px 8px 10px #0000008c;
 }
 
+.data-container2 {
+    width: 50%;
+    color: white;
+    border: white solid 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 8px 8px 10px #0000008c;
+}
+
 .data-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -235,4 +249,18 @@ hr {
 hr {
     width: 50%;
     margin: 1rem;
+}
+
+.opening-crawl-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.opening-crawl-title {
+    margin-bottom: 1rem;
 }
