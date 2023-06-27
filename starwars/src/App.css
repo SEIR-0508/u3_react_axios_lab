@@ -2,36 +2,60 @@
   margin: 0 auto;
   padding: 0;
 }
-.app{
-  display: flex;
-  flex-direction: column;
-}
-.app-header {
-  height: 100px;
-}
 .nav-links {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 10px;
+  margin-top: 10px;
 }
+
+.logo img{
+  border-radius: 15px;
+  border: 1px solid white;
+}
+
 .starLogo {
-  width: 80px;
-  margin-left: 15px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  width: 100px;
+  height: auto;
 }
+
+.nav-dropdown {
+  position: relative;
+  margin-left: 16px;
+}
+
+.dropdown-button {
+  padding: 8px 16px;
+  background-color: yellow;
+  border: white;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  padding: 8px 0;
+  background-color: rgb(106, 106, 106);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
 .nav-link {
-  text-decoration: none;
-  color: white;
-  margin-right: 20px;
-  transition: font-size .3s ease;
-}
-.nav-link:hover {
-  font-size: 17px;
+  display: block;
+  padding: 8px 16px;
   color: yellow;
 }
+
+.nav-link:hover {
+  color: yellow;
+  background-color: black;
+}
+
 .main{
   display: flex;
   justify-content: center;
@@ -43,7 +67,7 @@ img {
   margin-top: 30px;
   border-radius: 15px;
   border: 1px solid yellow;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .gallery {
   display: flex;
