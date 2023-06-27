@@ -50,7 +50,7 @@ function App() {
         <Route exact path="/films" element = {<Films films={films}/>}/>
         <Route exact path="/planets" element = {<Planets planets={planets}/>}/>
         <Route exact path="/characters" element = {<Characters characters={characters}/>}/>
-        <Route exact path="/starshipdetails" element = {<ShipDetails />}/>
+        <Route exact path="/starships/:id" element = {<ShipDetails />}/>
       </Routes>
     </div>
   )
