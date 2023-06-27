@@ -5,6 +5,9 @@ import FilmsList from './Films'
 import CharactersList from './Characters'
 import PlanetsList from './Planets'
 import StarshipPage from './StarshipPage'
+import FilmPage from './FilmPage'
+import CharacterPage from './CharacterPage'
+import PlanetPage from './PlanetPage'
 
 const Main = () => {
     return (
@@ -16,6 +19,9 @@ const Main = () => {
                 <Route path="/planets" element={<PlanetsList />} />
                 <Route path="/characters" element={<CharactersList />} />
                 <Route path="/starships/:id" element={<StarshipPage />} />
+                <Route path="/films/:id" element={<FilmPage />} />
+                <Route path="/characters/:id" element={<CharacterPage />} />
+                <Route path="/planets/:id" element={<PlanetPage />} />
             </Routes>
         </div>
     )
