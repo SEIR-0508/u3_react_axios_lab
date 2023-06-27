@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useParams, useLocation} from "react-router-dom";
+import { useParams, useLocation, Link} from "react-router-dom";
+import Films from "./Films";
 
 
 
@@ -20,6 +21,8 @@ console.log(film)
       <p>Director : {film.director}</p>
       <p>Producer : {film.producer}</p>
       <p>Release date : {film.release_date}</p>
+      
+      <Link to="/films"> Return to films list</Link>
     </div>
   ) : (
     <h3>Loading films...</h3>

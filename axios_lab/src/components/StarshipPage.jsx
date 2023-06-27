@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useLocation} from "react-router-dom";
+import { useParams, useLocation, Link} from "react-router-dom";
 
 
 
@@ -20,7 +20,7 @@ console.log(starship)
       <p>{starship.passengers}</p>
       <p>Length: {starship.length} Meters</p>
                        
-     
+      <Link to="/starship"> Return to Starship list</Link>
     </div>
   ) : (
     <h3>Loading starship...</h3>

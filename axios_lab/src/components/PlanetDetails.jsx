@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useLocation} from "react-router-dom";
+import { useParams, useLocation, Link} from "react-router-dom";
 
 
 
@@ -17,6 +17,7 @@ console.log(planet)
       <p>Rotation period : {planet.rotation_period}</p>
       <p>Surface water : {planet.surface_water}</p>
       <p>Population : {planet.population}</p>
+      <Link to="/planets"> Return to planet list</Link>
     </div>
   ) : (
     <h3>Loading Planets...</h3>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useParams, useLocation} from "react-router-dom";
+import { useParams, useLocation, Link} from "react-router-dom";
+
 
 
 
@@ -17,6 +18,8 @@ console.log(character)
       <h2>Name: {character.name}</h2>
       <p>Height : {character.height}</p>
       <p>Mass : {character.mass}</p>
+
+      <Link to="/Characters"> Return to starship list</Link>
     </div>
   ) : (
     <h3>Loading Characters...</h3>
