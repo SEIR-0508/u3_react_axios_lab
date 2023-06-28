@@ -1,0 +1,111 @@
+body {
+  background-image: url("https://mpudata.sfo2.digitaloceanspaces.com/original/2X/6/6f7d37cd5f7ef08a2a17602e0aa6ad3a6880d747.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-links {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  border-bottom: 1vmin solid white;
+  background-color: #242424;
+}
+
+.nav-links > * {
+  margin: 3vmin;
+  color: white;
+}
+
+main {
+  width: 100vw;
+  margin-top: 15vmin;
+  display: flex;
+  justify-content: center;
+}
+
+main > * {
+  display: grid;
+  grid-template-columns: 60vmin 60vmin;
+}
+
+main > .loading {
+  width: 100vw;
+  height: 10vmin;
+  text-align: center;
+  font-size: 7vmin;
+}
+
+main > * > * {
+  border: .4vmin solid white;
+  margin: 1vmin;
+  padding: 1vmin;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(22, 22, 53, 0.7);
+  border-radius: .5vmin;
+}
+
+.home-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-div > img {
+  border: none;
+  height: 45vmin;
+}
+
+.home-div > h1 {
+  font-size: 20vmin;
+  border: none;
+  background: none;
+}
+
+.div-title-text {
+  font-size: 3vmin;
+  color: Yellow;
+  border-bottom: .3vmin solid black;
+  padding: .4vmin;
+}
+
+.detail-div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(22, 22, 53, 0.7);
+  padding: 3vmin;
+  border-radius: 1vmin;
+}
+
+.detail-div > h2 {
+  color: yellow;
+  border: .1vmin solid black;
+  padding-left: 4vmin;
+  padding-right: 4vmin;
+  font-size: 10vmin;
+  text-align: center;
+  background-color: transparent;
+}
+
+.detail-div > p {
+  border: none;
+  background-color: transparent;
+}
+
+.back-btn {
+  width: 10vmin;
+  font-size: 3vmin;
+  text-align: center;
+  padding: .2vmin;
+}
+
+p {
+  padding: .4vmin;
+}
+
+
+
+
