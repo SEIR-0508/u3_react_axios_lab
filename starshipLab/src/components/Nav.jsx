@@ -9,6 +9,7 @@ const Nav = () => {
             <Link to='/film'>Film list</Link>
             <Link to='/planet'>Planet List</Link>
             <Link to='/people'>People List</Link>
+            
         </div>
     )
 }
