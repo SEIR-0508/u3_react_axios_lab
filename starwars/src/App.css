@@ -1,17 +1,18 @@
-#root {
+* {
   margin: 0 auto;
   padding: 0;
+  background-color: #242424;
+  color: white;
 }
 .nav-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 10px;
 }
-
 .logo img{
   border-radius: 15px;
   border: 1px solid white;
+  margin-right: 20px;
 }
 
 .starLogo {
@@ -31,6 +32,7 @@
   border-radius: 4px;
   cursor: pointer;
   color: black;
+  margin-left: 10px;
 }
 
 .dropdown-content {
@@ -48,12 +50,27 @@
 .nav-link {
   display: block;
   padding: 8px 16px;
+  background-color: rgb(106, 106, 106);
+  text-decoration: none;
   color: yellow;
 }
 
 .nav-link:hover {
   color: yellow;
+  background-color: #242424;
+}
+
+.back {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+.back-button {
   background-color: black;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: yellow;
 }
 
 .main{
@@ -72,6 +89,7 @@ img {
 .gallery {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -80,6 +98,28 @@ img {
   width: 300px;
   margin-top: 30px;
   border-radius: 15px;
-  background-color: black;
   text-align: center;
+  padding: 10px;
+}
+.card ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.card li {
+  list-style-type: none;
+  
+}
+hr {
+  color: white;
+  width: 90%;
+}
+
+@media (max-width: 600px) {
+  .starLogo{
+    width: 80px;
+  }
+  .nav-links h1 {
+    font-size: 20px;
+  }
 }

@@ -11,7 +11,6 @@ function App() {
       <div className='app-header'>
         <Header />
       </div>
-
       <div className='main'>
         <Main />
       </div>

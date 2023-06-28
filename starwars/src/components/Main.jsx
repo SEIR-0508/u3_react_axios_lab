@@ -6,6 +6,12 @@ import Planets from './Planets'
 import Species from './Species'
 import StarshipList from './StarshipList'
 import Vehicles from './Vehicles'
+import StarshipDetails from "./StarshipDetails";
+import FilmDetails from "./FilmDetails";
+import PlanetDetails from "./PlanetDetails";
+import CharacterDetails from './CharacterDetails'
+import VehicleDetails from './VehicleDetails'
+import SpeciesDetails from "./SpeciesDetails";
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
@@ -76,10 +82,21 @@ const Main = () => {
                 starships={starships}
                 />}
           />
+          <Route 
+            path='/starship/:id' 
+            element={<StarshipDetails
+              starships={starships} />}
+          />
 
           <Route      
                 path='/films' 
                 element={<Films 
+                films={films}
+                />}
+          />
+          <Route      
+                path='/films/:id' 
+                element={<FilmDetails 
                 films={films}
                 />}
           />
@@ -90,10 +107,22 @@ const Main = () => {
                 planets={planets}
                 />}
           />
+          <Route      
+                path='/planets/:id' 
+                element={<PlanetDetails 
+                planets={planets}
+                />}
+          />
 
           <Route      
                 path='/characters' 
                 element={<Characters 
+                characters={characters}
+                />}
+          />
+          <Route      
+                path='/characters/:id' 
+                element={<CharacterDetails 
                 characters={characters}
                 />}
           />
@@ -104,10 +133,22 @@ const Main = () => {
                 vehicles={vehicles}
                 />}
           />
+          <Route      
+                path='/vehicles/:id' 
+                element={<VehicleDetails 
+                vehicles={vehicles}
+                />}
+          />
 
           <Route      
                 path='/species' 
                 element={<Species 
+                species={species}
+                />}
+          />
+          <Route      
+                path='/species/:id' 
+                element={<SpeciesDetails 
                 species={species}
                 />}
           />

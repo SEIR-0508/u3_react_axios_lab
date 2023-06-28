@@ -1,22 +1,36 @@
-
+import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Species = (props) => {
-  console.log(props)
+
+  let navigate = useNavigate()
+    
+  const showSpecies = (species) => {
+    navigate(`${species.name}`)  
+  }
+
+  const BackButton = () => {
+    return (
+      <Link to="/" className="back-button">
+        Back
+      </Link>
+    )
+  }
+
   return (
-    <div className="gallery">
-      {
-        props.species.map((species) => (
-          <div key={species.id} className="card">
-            <h2>{species.name}</h2>
-            <p>Classification: {species.classification}</p>
-            <p>Average Heigth: {species.average_height}cm</p>
-            <p>Average Lifespan: {species.average_lifespan} yrs</p>
-            <p>Skin Colors: {species.skin_colors}</p>
-            <p>Eye Colors: {species.eye_colors}</p>
-            <p>Hair Colors: {species.hair_colors}</p>
-          </div>
-        ))
-      }
+    <div>
+      <div className="back">
+        <BackButton />
+      </div>
+      <div className="gallery">
+        {
+          props.species.map((species) => (
+            <div key={species.name} onClick={() => showSpecies(species)} className="card">
+              <h2>{species.name}</h2>
+            </div>
+          ))
+        }
+      </div>
     </div>
   )
 }
