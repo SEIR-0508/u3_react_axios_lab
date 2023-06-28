@@ -19,7 +19,7 @@ const FilmDetails = () => {
     }, [id]);
 
     return film ? (
-        <div className="film">
+        <div className="film-details">
             <h2>{film.title}</h2>
             <ul>
                 <li><span>Episode: </span>{film.episode_id}</li>
@@ -28,7 +28,8 @@ const FilmDetails = () => {
                 <li><span>Release Date: </span>{film.release_date}</li>
                 <li><span>Opening Crawl: </span>{film.opening_crawl}</li>
             </ul>
-            <button><Link to="/films">Return to film list</Link></button>
+            <div></div>
+            <button><Link to="/films">Return to Film List</Link></button>
         </div>
     ) : <h3>Finding film...</h3>
 }

@@ -20,7 +20,7 @@ export default function ShipDetails() {
   }, [])
 
   return starship ? (
-    <div className="detail">
+    <div className="starship-details">
       <h2>Starship: {starship.name}</h2>
       <ul>
         <li><span>Manufacturer:</span> {starship.manufacturer}</li>
@@ -33,7 +33,8 @@ export default function ShipDetails() {
         <li><span>Consumables:</span> {starship.consumables}</li>
         <li><span>Hyperdrive Rating:</span> {starship.hyperdrive_rating}</li>
       </ul>
-      <button><Link to="/starships"> Return to starship list</Link></button>
+      <div></div>
+      <button><Link to="/starships"> Return to Starship List</Link></button>
     </div>
   ) : <h3>Finding starship...</h3>
 }

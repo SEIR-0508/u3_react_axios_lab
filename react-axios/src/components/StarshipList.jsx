@@ -11,9 +11,7 @@ const StarshipList = (props) => {
             const res = await axios.get(URL)
             total = total.concat(res.data.results)
             setStarships(total)
-            console.log(total, 'render once', res.data.next)
             if (res.data.next) {
-                console.log(res.data.next)
                 getStarships(res.data.next, total)
             }
         }
@@ -25,15 +23,14 @@ const StarshipList = (props) => {
     const showShip = (key) => {
         navigate(`${key}`)
     }
-
     console.log(starships)
 
     return starships.length != 0 ? (
         <div className="starships">
-            <h2>Starships List</h2>
+            <h2>Starship List</h2>
             <div className="grid">
-                {starships.map((starship, key) => (
-                    <div key={key + 2} onClick={() => showShip(key + 2)} className='card'>
+                {starships.map((starship) => (
+                    <div key={starship.url.split('/').at(-2)} onClick={() => showShip(starship.url.split('/').at(-2))} className='card'>
                         <h3>{starship.name}</h3>
                     </div>
                 ))}

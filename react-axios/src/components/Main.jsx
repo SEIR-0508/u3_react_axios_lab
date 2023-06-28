@@ -6,8 +6,8 @@ import Planets from "./Planets"
 import Characters from "./Characters"
 import ShipDetails from "./StarshipPage"
 import FilmDetails from "./FilmPage"
-// import PlanetDetails from "./PlanetPage"
-// import CharacterDetails from "./CharacterPage"
+import PlanetDetails from "./PlanetPage"
+import CharacterDetails from "./CharacterPage"
 
 
 const Main = () => {
@@ -21,8 +21,8 @@ const Main = () => {
                 <Route path="/characters" element={<Characters />} />
                 <Route path="/starships/:id" element={<ShipDetails/>} />
                 <Route path="/films/:id" element={<FilmDetails/>} />
-                {/* <Route path="/planets/:id" element={<PlanetDetails/>} />
-                <Route path="/characters/:id" element={<CharacterDetails/>} /> */}
+                <Route path="/planets/:id" element={<PlanetDetails/>} />
+                <Route path="/characters/:id" element={<CharacterDetails/>} />
             </Routes>
         </div>
     )

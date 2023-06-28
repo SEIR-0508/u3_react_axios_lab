@@ -23,7 +23,7 @@ const Films = () => {
 
     return films.length != 0 ? (
         <div>
-            <h2>Films List</h2>
+            <h2>Film List</h2>
             <div className="grid">
                 {
                     films.map((film, key) => (

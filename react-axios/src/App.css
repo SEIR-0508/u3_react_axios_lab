@@ -44,13 +44,18 @@
 }
 
 ul {
-  padding: 0 10vw 0 15vw;
+  display: inline-block;
+  padding: 0;
 }
 
 li {
   list-style-type: none;
   text-align: left;
   line-height: 2em;
+}
+
+.film-details ul {
+  padding: 0 10vw 0 15vw
 }
 
 span {

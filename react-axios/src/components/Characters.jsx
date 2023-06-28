@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { character_url } from '../global'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const Characters = () => {
@@ -18,19 +19,19 @@ const Characters = () => {
         getCharacters(character_url, [])
     }, [])
 
-    console.log(characters)
+const navigate = useNavigate()
+
+const showCharacter = (key) => {
+    navigate(`${key}`)
+}
+
     return characters.length != 0 ? (
         <div>
-            <h2>Characters List</h2>
+            <h2>Character List</h2>
             <div className="grid">
             {characters.map(character => (
-                <div key={character.name} className='card'>
+                <div key={character.url.split('/').at(-2)} onClick={() => {showCharacter(character.url.split('/').at(-2))}} className='card'>
                     <h3>{character.name}</h3>
-                    {/* <li>Height: {character.height}</li>
-                    <li>Mass: {character.mass}</li>
-                    <li>Gender: {character.gender}</li>
-                    <li>Hair Color: {character.hair_color}</li>
-                    <li>Eye Color: {character.eye_color}</li> */}
                 </div>
             ))}
         </div>
