@@ -1,0 +1,304 @@
+[
+    {
+        "id": 0,
+        "name": "Tatooine",
+        "image": "/src/assets/Planet/Tatooine.webp"
+    },
+    {
+        "id": 1,
+        "name": "Alderaan",
+        "image": "/src/assets/Planet/Alderaan.png"
+    },
+    {
+        "id": 2,
+        "name": "Yavin IV",
+        "image": "/src/assets/Planet/Yavin-4.webp"
+    },
+    {
+        "id": 3,
+        "name": "Hoth",
+        "image": "/src/assets/Planet/Hoth.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Dagobah",
+        "image": "/src/assets/Planet/dagobah.webp"
+    },
+    {
+        "id": 5,
+        "name": "Bespin",
+        "image": "/src/assets/Planet/Bespin.webp"
+    },
+    {
+        "id": 6,
+        "name": "Endor",
+        "image": "/src/assets/Planet/Endor.webp"
+    },
+    {
+        "id": 7,
+        "name": "Naboo",
+        "image": "/src/assets/Planet/Naboo.webp"
+    },
+    {
+        "id": 8,
+        "name": "Coruscant",
+        "image": "/src/assets/Planet/Coruscant.webp"
+    },
+    {
+        "id": 9,
+        "name": "Kamino",
+        "image": "/src/assets/Planet/Kamino.webp"
+    },
+    {
+        "id": 10,
+        "name": "Geonosis",
+        "image": "/src/assets/Planet/Geonosis.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "Utapau",
+        "image": "/src/assets/Planet/Utapau.webp"
+    },
+    {
+        "id": 12,
+        "name": "Mustarfar",
+        "image": "/src/assets/Planet/Mustafar.webp"
+    },
+    {
+        "id": 13,
+        "name": "Kashyyyk",
+        "image": "/src/assets/Planet/Kashyyyk.webp"
+    },
+    {
+        "id": 14,
+        "name": "Polis Massa",
+        "image": "/src/assets/Planet/PolisMassa.webp"
+    },
+    {
+        "id": 15,
+        "name": "Mygeeto",
+        "image": "/src/assets/Planet/Mygeeto.webp"
+    },
+    {
+        "id": 16,
+        "name": "Felucia",
+        "image": "/src/assets/Planet/Felucia.webp"
+    },
+    {
+        "id": 17,
+        "name": "Cato Neimoidia",
+        "image": "/src/assets/Planet/CatoNeimoidia.webp"
+    },
+    {
+        "id": 18,
+        "name": "Saleucami",
+        "image": "/src/assets/Planet/Saleucami.webp"
+    },
+    {
+        "id": 19,
+        "name": "Stewjon",
+        "image": "/src/assets/Planet/Stewjon.jpeg"
+    },
+    {
+        "id": 20,
+        "name": "Eriadu",
+        "image": "/src/assets/Planet/Eriadu.webp"
+    },
+    {
+        "id": 21,
+        "name": "Corellia",
+        "image": "/src/assets/Planet/Corellia.webp"
+    },
+    {
+        "id": 22,
+        "name": "Rodia",
+        "image": "/src/assets/Planet/Rodia.webp"
+    },
+    {
+        "id": 23,
+        "name": "Nal Hutta",
+        "image": "/src/assets/Planet/NalHutta.webp"
+    },
+    {
+        "id": 24,
+        "name": "Dantooine",
+        "image": "/src/assets/Planet/Dantooine.webp"
+    },
+    {
+        "id": 25,
+        "name": "Bestine IV",
+        "image": "/src/assets/Planet/Bestine.webp"
+    },
+    {
+        "id": 26,
+        "name": "Ord Mantell",
+        "image": "/src/assets/Planet/Ord_Mantell.webp"
+    },
+    {
+        "id": 27,
+        "name": "Unknown",
+        "image": "/src/assets/Planet/Geonosis.webp"
+    },
+    {
+        "id": 28,
+        "name": "Trandosha",
+        "image": "/src/assets/Planet/Trandosha.webp"
+    },
+    {
+        "id": 29,
+        "name": "Socorro",
+        "image": "/src/assets/Planet/Socorro.webp"
+    },
+    {
+        "id": 30,
+        "name": "Mon Cala",
+        "image": "/src/assets/Planet/MonCala.webp"
+    },
+    {
+        "id": 31,
+        "name": "Chandrila",
+        "image": "/src/assets/Planet/Chandrila.webp"
+    },
+    {
+        "id": 32,
+        "name": "Sullust",
+        "image": "/src/assets/Planet/Sullust.webp"
+    },
+    {
+        "id": 33,
+        "name": "Toydaria",
+        "image": "/src/assets/Planet/toydaria.webp"
+    },
+    {
+        "id": 34,
+        "name": "Malastare",
+        "image": "/src/assets/Planet/Malastare.webp"
+    },
+    {
+        "id": 35,
+        "name": "Dathomir",
+        "image": "/src/assets/Planet/Dathomir.webp"
+    },
+    {
+        "id": 36,
+        "name": "Ryloth",
+        "image": "/src/assets/Planet/Ryloth.webp"
+    },
+    {
+        "id": 37,
+        "name": "Aleen Minor",
+        "image": "/src/assets/Planet/Aleen.webp"
+    },
+    {
+        "id": 38,
+        "name": "Vulpter",
+        "image": "/src/assets/Planet/Vulpter.webp"
+    },
+    {
+        "id": 39,
+        "name": "Troiken",
+        "image": "/src/assets/Planet/Troiken.webp"
+    },
+    {
+        "id": 40,
+        "name": "Tund",
+        "image": "/src/assets/Planet/Tund.webp"
+    },
+    {
+        "id": 41,
+        "name": "Haruun Kal",
+        "image": "/src/assets/Planet/HaruunKal.webp"
+    },
+    {
+        "id": 42,
+        "name": "Cerea",
+        "image": "/src/assets/Planet/Corellia.webp"
+    },
+    {
+        "id": 43,
+        "name": "Glee Anselm",
+        "image": "/src/assets/Planet/GleeAnselm.webp"
+    },
+    {
+        "id": 44,
+        "name": "Iridonia",
+        "image": "/src/assets/Planet/Iridonia.webp"
+    },
+    {
+        "id": 45,
+        "name": "Tholoth",
+        "image": "/src/assets/Planet/Tholoth.webp"
+    },
+    {
+        "id": 46,
+        "name": "Iktotch",
+        "image": "/src/assets/Planet/Iktotch.webp"
+    },
+    {
+        "id": 47,
+        "name": "Quermia",
+        "image": "/src/assets/Planet/Quermia.webp"
+    },
+    {
+        "id": 48,
+        "name": "Dorin",
+        "image": "/src/assets/Planet/Dorin.webp"
+    },
+    {
+        "id": 49,
+        "name": "Champala",
+        "image": "/src/assets/Planet/Champala.webp"
+    },
+    {
+        "id": 50,
+        "name": "Mirial",
+        "image": "/src/assets/Planet/MonCala.webp"
+    },
+    {
+        "id": 51,
+        "name": "Serenno",
+        "image": "/src/assets/Planet/Serenno.webp"
+    },
+    {
+        "id": 52,
+        "name": "Concord Dawn",
+        "image": "/src/assets/Planet/ConcordDawn.jpeg"
+    },
+    {
+        "id": 53,
+        "name": "Zolan",
+        "image": "/src/assets/Planet/Zolan.webp"
+    },
+    {
+        "id": 54,
+        "name": "Ojom",
+        "image": "/src/assets/Planet/Ojom.webp"
+    },
+    {
+        "id": 55,
+        "name": "Skako",
+        "image": "/src/assets/Planet/Skako.webp"
+    },
+    {
+        "id": 56,
+        "name": "Muunilinst",
+        "image": "/src/assets/Planet/Ryloth.webp"
+    },
+    {
+        "id": 57,
+        "name": "Shili",
+        "image": "/src/assets/Planet/Shili.webp"
+    },
+    {
+        "id": 58,
+        "name": "Kalee",
+        "image": "/src/assets/Planet/Kalee.webp"
+    },
+    {
+        "id": 59,
+        "name": "Umbara",
+        "image": "/src/assets/Planet/Umbara.webp"
+    }
+
+
+]
