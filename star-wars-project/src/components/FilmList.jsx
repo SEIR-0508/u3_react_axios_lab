@@ -2,8 +2,14 @@ import { FILMS_URL} from '../globals.js'
 import { useEffect } from 'react'
 import axios from 'axios'
 import Header from './Header'
+import { useNavigate } from 'react-router-dom'
 
 export default function FilmList({ films,setFilms }){
+
+    let navigate = useNavigate()
+    const showFilm = (film) =>{
+        navigate(`${film.episode_id}`)
+    }
     useEffect(()=>{
         const getFilmsAPI = async() =>{
           const response = await axios.get(FILMS_URL)
@@ -11,17 +17,18 @@ export default function FilmList({ films,setFilms }){
         }
         getFilmsAPI()
       }, [])
-    return(
+    return films ? (
         <div>
         <Header />
-        <div className='films'>
+        <div className='films list'>
             <h2>Films</h2>
-            <ul>
                 {films.map(film =>(
-                    <li key={film.title}>{film.title}</li>
+                    <div key={film.title} className='item' onClick={()=>(showFilm(film))}>
+                        <h1>{film.title}</h1>
+                        <span>Opening Credits: {film.opening_crawl}</span>
+                    </div>
                 ))}
-            </ul>
         </div>
         </div>
-    )
+    ) : <h3>Loading...</h3>
 }

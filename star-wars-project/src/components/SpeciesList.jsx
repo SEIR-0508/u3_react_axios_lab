@@ -2,8 +2,13 @@ import { SPECIES_URL} from '../globals.js'
 import axios from 'axios'
 import { useEffect } from 'react'
 import Header from './Header'
+import { useNavigate } from 'react-router-dom'
 
 export default function SpeciesList({ species, setSpecies }){
+    let navigate = useNavigate()
+    const showOrganism = (organism) =>{
+        navigate(organism.classification)
+    }
     useEffect(()=>{
         const getSpeciesAPI = async() => {
             const response = await axios.get(SPECIES_URL)
@@ -12,17 +17,18 @@ export default function SpeciesList({ species, setSpecies }){
         }
         getSpeciesAPI()
     },[])
-    return(
+    return species ? (
         <div>
             <Header />
-            <div className='species'>
+            <div className='species list'>
                 <h2>Species</h2>
-                <ul>
                 {species.map(organism=>(
-                    <li key={organism.name}>{organism.name}</li>
+                    <div key={organism.name} className='item' onClick={()=>showOrganism(organism)}>
+                        <h1>{organism.name}</h1>
+                        <p>Classification: {organism.classification}</p>
+                    </div>
                 ))}
-                </ul>
             </div>
         </div>
-    )
+    ) : <h3>Loading...</h3>
 }

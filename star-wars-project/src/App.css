@@ -27,6 +27,34 @@ nav{
   margin-right:0;
 }
 
+button{
+  color:white;
+  font-size:1rem;
+  border: 1px solid white;
+  border-radius: 5%;
+  background-color: #333;
+  padding:20px 30px;
+  position: relative;
+  top:100px;
+  right: 468px;
+}
+
+.filmlist-button{
+  right: 482px;
+}
+
+.planetlist-button{
+  right: 475px;
+}
+
+.characterlist-button{
+  right: 462px;
+}
+
+.specieslist-button{
+  right: 473px;
+}
+
 main{
   display: flex;
   align-items: center;
@@ -37,12 +65,32 @@ main{
 h1{
   margin: 0 30px 0 0;
   font-size: 3rem;
+}
+
+main h1{
   text-align: left;
 }
 
 img{
   height:400px;
   border-radius: 5%;
+}
+
+.list{
+  text-align: center;
+}
+
+.item{
+  margin-bottom:100px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.list h2{
+  font-size:4rem;
+  color: #333;
+  margin-bottom:110px;
+  text-align: center;
 }
 
 .starships{
@@ -69,3 +117,10 @@ img{
   text-align: left;
   margin-top:100px;
 }
+
+.details{
+  margin-top:100px;
+  border: 1px solid white;
+}
+
+
