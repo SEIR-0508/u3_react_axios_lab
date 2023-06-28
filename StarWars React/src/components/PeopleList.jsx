@@ -1,20 +1,27 @@
 import { BASE_URL } from "../../globals"
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom' 
+import People from '../data/People.json'
 
 export default function PeopleList () {
     const [people, setPeople] = useState([])
+    const [peopleImg, setPeopleImg] = useState([])
 
     useEffect(() => {
         const getPeople = async () => {
             const responce = await axios.get(`${BASE_URL}people`)
+            setPeopleImg(People)
             setPeople(responce)
         }
         getPeople()
-        console.log(people)
     }, [])
 
-    console.log(people)
+    let navigate = useNavigate()
+
+    const showPerson = (index) => {
+        navigate(`${index}`)
+    }
 
     if (!people.data) {
         return (
@@ -24,14 +31,9 @@ export default function PeopleList () {
         return (
             <div className="main">
             {people.data.results.map((people, index) => (
-                <div key={index} className="card">
+                <div key={index} className="card" onClick={() => {showPerson(index + 1)}}>
                     <h1>{people.name}</h1>
-                    <p>Height: {people.height}cm</p>
-                    <p>Weight: {people.mass}kg</p>
-                    <p>Hair Color: {people.hair_color}</p>
-                    <p>Eye Color: {people.eye_color}</p>
-                    <p>Skin Color: {people.skin_color}</p>
-                    <p>Gender: {people.gender}</p>
+                    <img src={peopleImg[index].image} className="img" />
                 </div>
             ))}
         </div>

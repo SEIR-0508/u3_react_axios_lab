@@ -1,18 +1,29 @@
 import { BASE_URL } from "../../globals"
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Planet from '../data/Planet.json'
 
 export default function PlanetsList () {
     const [planets, setPlanets] = useState([])
+    const [planetImg, setPlanetImg] = useState([])
 
     useEffect(() => {
         const getPlanet = async () => {
-            const responce = await axios.get(`${BASE_URL}/planets`)
+            const responce = await axios.get(`${BASE_URL}planets`)
+            setPlanetImg(Planet)
             setPlanets(responce)
         }
         getPlanet()
     }, [])
-    console.log(planets)
+
+    let navigate = useNavigate()
+
+    const showPlanet = (index) => {
+        navigate(`${index}`)
+    }
+
+    console.log(planets.data)
 
     if (!planets.data) {
         return (
@@ -22,13 +33,9 @@ export default function PlanetsList () {
         return (
             <div className="main">
             {planets.data.results.map((planet, index) => (
-                <div key={index} className="card">
+                <div key={index} className="card" onClick={() => {showPlanet(index + 1)}}>
                     <h1>{planet.name}</h1>
-                    <p>Population: {planet.population}</p>
-                    <p>Gravity: {planet.gravity}</p>
-                    <p>Climate: {planet.climate}</p>
-                    <p>Orbital Period: {planet.orbital_period} days</p>
-                    <p>Rotational Period: {planet.rotation_period}hrs</p>
+                    <img src={planetImg[index].image} className="img" />
                 </div>
             ))}
         </div>
