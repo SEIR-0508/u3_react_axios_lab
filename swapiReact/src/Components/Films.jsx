@@ -5,6 +5,7 @@ import axios from 'axios';
 const Films = () => {
   const [films, setFilms] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [hoveredFilm, setHoveredFilm] = useState(null);
 
   useEffect(() => {
     const fetchFilms = async () => {
@@ -13,7 +14,6 @@ const Films = () => {
         setFilms(response.data.results);
         setIsLoading(false);
       } catch (error) {
-        
         setIsLoading(false);
       }
     };
@@ -38,12 +38,12 @@ const Films = () => {
     textAlign: 'center',
     color: '#FDD545',
   };
+
   const loadingStyle = {
-    
     fontSize: '1rem',
     marginBottom: '1rem',
     textAlign: 'center',
-    color: '#FDD545'
+    color: '#FDD545',
   };
 
   const filmItemStyle = {
@@ -51,12 +51,28 @@ const Films = () => {
     padding: '0',
     margin: '0',
     textAlign: 'center',
+    transition: 'background-color 0.3s',
+  };
+
+  const filmItemHoverStyle = {
+    fontWeight: "bold",
+      transition: 'filter 0.3s, transform 0.3s, box-shadow 0.3s',
+      boxShadow: 'inset 0 -2px 0 0 black'
   };
 
   const filmLinkStyle = {
     fontSize: '1.5rem',
     marginBottom: '0.5rem',
     color: '#FDD545',
+    textDecoration: 'none',
+  };
+
+  const handleFilmHover = (index) => {
+    setHoveredFilm(index);
+  };
+
+  const handleFilmLeave = () => {
+    setHoveredFilm(null);
   };
 
   return (
@@ -66,8 +82,16 @@ const Films = () => {
         <p style={loadingStyle}>The Force is still awakening...</p>
       ) : (
         <ul>
-          {films.map((film) => (
-            <li key={film.episode_id} style={filmItemStyle}>
+          {films.map((film, index) => (
+            <li
+              key={film.episode_id}
+              style={{
+                ...filmItemStyle,
+                ...(hoveredFilm === index ? filmItemHoverStyle : {}),
+              }}
+              onMouseEnter={() => handleFilmHover(index)}
+              onMouseLeave={handleFilmLeave}
+            >
               <Link to={`/films/${film.episode_id}`} style={filmLinkStyle}>
                 {film.title}
               </Link>
