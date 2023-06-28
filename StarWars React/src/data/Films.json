@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "name": "A New Hope",
+        "episode": 4,
+        "image": "https://cdna.artstation.com/p/assets/images/images/026/795/462/large/juan-martin-isaia-poster-star-wars-a-new-hope.jpg?1589753894"
+    },
+    {
+        "id": 1,
+        "name": "The Empire Strikes Back",
+        "episode": 5,
+        "image": "https://cdn.shopify.com/s/files/1/1057/4964/products/The-Empire-Strikes-Back-Vintage-Movie-Poster-Original-1-Sheet-27x41_5edbbf9a-5882-40b3-a69f-473a36bb4f8a.jpg?v=1666926044"
+    },
+    {
+        "id": 2,
+        "name": "Return of the Jedi",
+        "episode": 6,
+        "image": "https://cdn.shopify.com/s/files/1/1057/4964/products/Return-of-the-Jedi-Vintage-Movie-Poster-Original-1-Sheet-27x41-5150.jpg?v=1665378222"
+    },
+    {
+        "id": 3,
+        "name": "The Phantom Menace",
+        "episode": 1,
+        "image": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/4b3f731661eb8458f6a0205989b880ce_dc5b6a58-a807-4f86-92a6-24f66dcd6f38_500x.jpg?v=1573651511"
+    },
+    {
+        "id": 4,
+        "name": "Attack of the Clones",
+        "episode": 2,
+        "image": "https://m.media-amazon.com/images/I/61zAkpvYLqL.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Revenge of the Sith",
+        "episode": 3,
+        "image": "https://musicart.xboxlive.com/7/64325100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
+    }
+]

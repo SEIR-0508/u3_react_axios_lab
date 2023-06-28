@@ -1,0 +1,52 @@
+[
+    {
+        "id": 0,
+        "name": "CR90",
+        "image": "https://static.wikia.nocookie.net/starwars/images/2/24/TantiveIV-TSWB.png/revision/latest?cb=20221006055135"
+    },
+    {
+        "id": 1,
+        "name": "Star Destroyer",
+        "image": "https://static.wikia.nocookie.net/starwars/images/e/e4/ImperialClassStarDestroyer-TSWB.png/revision/latest?cb=20230515235250"
+    },
+    {
+        "id": 2,
+        "name": "Sentinel-calss landing craft",
+        "image": "https://static.wikia.nocookie.net/starwars/images/6/6e/Sentinel_negvv.png/revision/latest?cb=20170411232732"
+    },
+    {
+        "id": 3,
+        "name": "Death Star",
+        "image": "https://static.wikia.nocookie.net/starwars/images/7/70/DSI-HDapproach.png/revision/latest?cb=20130221005853"
+    },
+    {
+        "id": 4,
+        "name": "Millennium Falcon",
+        "image": "https://static.wikia.nocookie.net/starwars/images/5/52/Millennium_Falcon_Fathead_TROS.png/revision/latest?cb=20221029015218"
+    },
+    {
+        "id": 5,
+        "name": "Y-Wing",
+        "image": "https://static.wikia.nocookie.net/starwars/images/8/81/Y-wing.png/revision/latest?cb=20161110013308"
+    },
+    {
+        "id": 6,
+        "name": "X-Wing",
+        "image": "https://static.wikia.nocookie.net/starwars/images/0/00/Xwing-ROOCE.png/revision/latest?cb=20230516042654"
+    },
+    {
+        "id": 7,
+        "name": "TIE Advanced",
+        "image": "https://static.wikia.nocookie.net/starwars/images/1/1d/Vader_TIEAdvanced_SWB.png/revision/latest?cb=20160915042032"
+    },
+    {
+        "id": 8,
+        "name": "Executor",
+        "image": "https://static.wikia.nocookie.net/starwars/images/3/30/Executor_BF2.png/revision/latest?cb=20230405071103"
+    },
+    {
+        "id": 9,
+        "name": "Rebel Transport",
+        "image": "https://static.wikia.nocookie.net/starwars/images/4/44/GR-75MediumTransport-100Scenes.png/revision/latest?cb=20221105213502"
+    }
+]

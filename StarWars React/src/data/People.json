@@ -1,0 +1,52 @@
+[
+    {
+        "id": 0,
+        "name": "Luke Skywalker",
+        "image": "https://static.wikia.nocookie.net/starwars/images/3/3d/LukeSkywalker.png/revision/latest?cb=20201218190434"
+    },
+    {
+        "id": 1,
+        "name": "C-3PO",
+        "image": "https://static.wikia.nocookie.net/starwars/images/f/fb/C3PO-TROSTGG.png/revision/latest?cb=20230602040122"
+    },
+    {
+        "id": 2,
+        "name": "R2-D2",
+        "image": "https://static.wikia.nocookie.net/starwars/images/e/eb/ArtooTFA2-Fathead.png/revision/latest?cb=20161108040914"
+    },
+    {
+        "id": 3,
+        "name": "Darth Vader",
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/f7/Darth_Vader.png"
+    },
+    {
+        "id": 4,
+        "name": "Leia Organa",
+        "image": "https://static.wikia.nocookie.net/starwars/images/f/f1/Leia_Organa_TROS.png/revision/latest?cb=20200102034101"
+    },
+    {
+        "id": 5,
+        "name": "Owen Lars",
+        "image": "https://static.wikia.nocookie.net/starwars/images/8/81/Owen-OP.jpg/revision/latest?cb=20070626181249"
+    },
+    {
+        "id": 6,
+        "name": "Beru Whitesun Lars",
+        "image": "https://static.wikia.nocookie.net/starwars/images/8/84/BeruWhitesunLars.jpg/revision/latest?cb=20070625220148"
+    },
+    {
+        "id": 7,
+        "name": "R5-D4",
+        "image": "https://static.wikia.nocookie.net/starwars/images/3/3f/R5D4-AG.png/revision/latest?cb=20230317020800"
+    },
+    {
+        "id": 8,
+        "name": "Biggs Darklighter",
+        "image": "https://static.wikia.nocookie.net/starwars/images/0/00/BiggsHS-ANH.png/revision/latest?cb=20130305010406"
+    },
+    {
+        "id": 9,
+        "name": "Obi-Wan Kenobi",
+        "image": "https://static.wikia.nocookie.net/starwars/images/4/4e/ObiWanHS-SWE.jpg/revision/latest?cb=20111115052816"
+    }
+]

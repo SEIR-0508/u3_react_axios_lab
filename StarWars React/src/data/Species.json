@@ -1,0 +1,52 @@
+[
+    {
+        "id": 0,
+        "name": "Human",
+        "image": "https://static.wikia.nocookie.net/starwars/images/3/3d/LukeSkywalker.png/revision/latest?cb=20201218190434"
+    },
+    {
+        "id": 1,
+        "name": "Droid",
+        "image": "https://static.wikia.nocookie.net/starwars/images/c/cd/Battle_Droid.png/revision/latest?cb=20160910192832"
+    },
+    {
+        "id": 2,
+        "name": "Wookie",
+        "image": "https://static.wikia.nocookie.net/starwars/images/1/1e/Chewbacca-Fathead.png/revision/latest?cb=20161108052810"
+    },
+    {
+        "id": 3,
+        "name": "Rodian",
+        "image": "https://static.wikia.nocookie.net/starwars/images/d/d3/Rodian_DICE.png/revision/latest?cb=20151106032702"
+    },
+    {
+        "id": 4,
+        "name": "Hutt",
+        "image": "https://static.wikia.nocookie.net/starwars/images/0/0b/Hutt-NEGAS.png/revision/latest?cb=20230114044738"
+    },
+    {
+        "id": 5,
+        "name": "Yoda",
+        "image": "https://static.wikia.nocookie.net/starwars/images/c/c3/Yoda_TPM_RotS.png/revision/latest?cb=20130810185858"
+    },
+    {
+        "id": 6,
+        "name": "Trandoshan",
+        "image": "https://static.wikia.nocookie.net/starwars/images/7/72/Bossk_full_body.png/revision/latest?cb=20221008024202"
+    },
+    {
+        "id": 7,
+        "name": "Mon Calamari",
+        "image": "https://static.wikia.nocookie.net/starwars/images/2/23/The_Mon_Calamari.png/revision/latest?cb=201508012025370"
+    },
+    {
+        "id": 8,
+        "name": "Ewok",
+        "image": "https://static.wikia.nocookie.net/swse/images/8/88/Ewok-large.png/revision/latest?cb=20170830020003"
+    },
+    {
+        "id": 9,
+        "name": "Sullustan",
+        "image": "https://static.wikia.nocookie.net/starwars/images/9/9c/Sullustan_DICE.png/revision/latest?cb=20151106031005"
+    }
+]
