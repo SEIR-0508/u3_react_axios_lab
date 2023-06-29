@@ -1,0 +1,30 @@
+
+.Starship-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-gap: 1em;
+  padding: 0.5em;
+  
+}
+
+.card {
+
+  border-style: 1px solid white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+
+}
+
+
+.people-card {
+  border-style: 1px solid white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+
+}
