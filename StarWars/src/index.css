@@ -29,6 +29,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: url('https://cdn.wallpapersafari.com/1/97/co341S.jpg');
+  background-size: cover;
 }
 
 h1 {
