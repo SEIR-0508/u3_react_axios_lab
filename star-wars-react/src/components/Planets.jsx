@@ -38,6 +38,8 @@ const PlanetsList = () => {
         console.log(planetNumber)
         if (planetNumber !== "1") {
             planetImages.push(`https://starwars-visualguide.com/assets/img/planets/${planetNumber}.jpg`)
+        } else if (planetNumber === "21") {
+            planetImages.push("https://mystwarscollection.weebly.com/uploads/8/9/9/4/8994856/399029_orig.jpg")
         } else {
             planetImages.push("https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Tatooine_%28fictional_desert_planet%29.jpg/220px-Tatooine_%28fictional_desert_planet%29.jpg")
         }

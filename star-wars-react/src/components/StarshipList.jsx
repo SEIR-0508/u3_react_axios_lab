@@ -42,6 +42,8 @@ const StarshipList = () => {
         starshipImages.push("https://64.media.tumblr.com/a89a0a93f53f06428b9c7011722b7ed3/tumblr_pcz55hSDGW1uf0h9xo3_500.jpg")
     } else if (starshipNumber === "3") {
         starshipImages.push("https://lumiere-a.akamaihd.net/v1/images/Star-Destroyer_ab6b94bb.jpeg")
+    } else if (starshipNumber === "35") {
+        starshipImages.push("https://lumiere-a.akamaihd.net/v1/images/v-wing-main_37a7dec1.jpeg")
     } else {
         starshipImages.push("https://swrpggm.com/wp-content/uploads/2021/02/GR75_FE.png")
     }
