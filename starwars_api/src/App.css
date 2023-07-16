@@ -1,0 +1,89 @@
+
+
+h3 {
+  font: 30px;
+}
+
+.Nav {
+  list-style: none;
+  align-items: center;
+}
+
+.pageHeader {
+  background-color: black;
+  color: yellow;
+  font: 70 px;
+}
+
+ul {
+  font-size: 22px;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  background-color: yellow;
+  align-items: center;
+  position: relative;
+  color: black;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  float: left;
+  justify-content: space-around;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-image: url("images/space.png");
+  
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  font: 25px;
+  padding: 2em;
+  margin: 10px;
+  color: white;
+  border: yellow 2px solid;
+}
+
+.read-the-docs {
+  color: #888;
+}
