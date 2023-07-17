@@ -14,6 +14,7 @@ In this deliverable, you'll consume the [Star Wars API](https://swapi.dev/api/st
 ## Setup + Starting Instructions 
 
 1. Create a new react app in this folder
+1. Touch a .gitignore file and enter your /node_modules into it so that they are not pushed up to github
 1. Create a components folder and touch a number of files: Header, Nav, Main, Home, and StarshipList.jsx. Nest Nav inside of Header, and nest Header and Main inside of App.
 1. Import React-Router Dependencies (`npm i react-router-dom`)
 1. Create a Nav bar with a link to a "/starship" route, as well as a "/" route for your Landing page.
